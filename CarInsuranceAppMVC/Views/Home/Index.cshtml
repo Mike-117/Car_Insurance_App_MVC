@@ -1,0 +1,69 @@
+﻿<div class="row no-gutters m-3">
+  <div class=" card col-1 col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+    <div class="card-header text-center">
+      <h5 class="m-0">Would you like to buy car insurance? Fill in the form and we'll give you a quote.</h5>
+    </div>
+    <div class="card-body">
+      @using (Html.BeginForm("Success", "Home", FormMethod.Post))
+      {
+        <div class="row no-gutters">
+          <div class="form-group col-md-12">
+            <div class="form-control">
+              <label for="firstName">First Name </label>
+              <input type="text" name="firstName" id="firstName">
+            </div>
+
+            <div class="form-control">
+              <label for="lastName">Last Name </label>
+              <input type="text" name="lastName" id="lastName">
+            </div>
+
+            <div class="form-control">
+              <label for="dateOfBirth">Date of Birth </label>
+              <input type="date" name="dateOfBirth" id="dateOfBirth">
+            </div>
+
+            <div class="form-control">
+              <label for="email">Email Address </label>
+              <input type="email" name="email" id="email">
+            </div>
+
+            <div class="form-control">
+              <label for="carMake">Car Make </label>
+              <input type="text" name="carMake" id="carMake">
+            </div>
+
+            <div class="form-control">
+              <label for="carModel">Car Model </label>
+              <input type="text" name="carModel" id="carModel">
+            </div>
+
+            <div class="form-control">
+              <label for="carYear">Car Year </label>
+              <input type="text" name="carYear" id="carYear">
+            </div>
+
+            <div class="form-group col-md-12">
+              <label>Have you ever had a DUI?</label>
+              <input type="radio" name="dui" value="true"> Yes
+              <input type="radio" name="dui" value="false"> No
+            </div>
+
+            <div class="form-control">
+              <label for="speedingtickets">How Many Speeding Tickets do you have?</label>
+              <input type="text" name="speedingTickets" id="speedingTickets">
+            </div>
+
+            <div class="form-group col-md-12">
+              <label>Do you want Liability or Full Coverage?</label>
+              <input type="radio" name="fullCoverage" value="false"> Liability
+              <input type="radio" name="fullCoverage" value="true"> Full Coverage
+            </div>
+
+            <button type="submit" class="btn btn-block btn-primary">Submit</button>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>>
